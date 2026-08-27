@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de filmes</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#ea580c">
+    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="icon" href="./icons/icon-192.png">
+    <link rel="apple-touch-icon" href="./icons/icon-192.png">
+    
+</head>
+    <body>
+
+        <header class="header">
+         <h1>Histórico</h1>
+        </header>
+
+        <!-- Luca -->
+       <div class="filmeassistido">
+            <!-- lado esquerdo; imagem e avaliação -->
+            <div class="coluna-esquerda">
+                <img src="img/luca.jpg" alt="Poster Luca">
+                 <div class="estrelas">
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                </div>
+                <button class="enviar">Enviar avaliação</button>
+                <p class="resultado"></p>
+            </div>
+            <!--lado direito; título, sinopse e botão -->
+            <div class="coluna-direita">
+                <h3>Luca</h3>
+                <p>Sinopse:</p>
+                <p>Na costa de Riviera Italiana, o garotinho Luca Paguro (Jacob Tremblay) conhece um novo melhor amigo de aventuras.</p>
+                 <button type="button" class="btn-ler-mais" onclick="toggleSinopse(this)">Ler mais</button>
+                <span class="texto-escondido">
+                   <p>No entanto, sua amizade fica ameaçada pela verdade: Luca e o amigo são monstros marinhos de outro mundo. Eles vivem disfarçados de humanos, mas o contato com a água revela suas verdadeiras formas. Por isso, manter o fato em segredo é um desafio diário.</p>
+                </span>
+            </div>
+       </div>
+
+       <!-- Close -->
+       <div class="filmeassistido">
+            <!-- lado esquerdo; imagem e avaliação -->
+            <div class="coluna-esquerda">
+                <img src="img/close.jpg" alt="Poster Close">
+                 <div class="estrelas">
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                </div>
+                <button class="enviar">Enviar avaliação</button>
+                <p class="resultado"></p>
+            </div>
+            <!--lado direito; título, sinopse e botão -->
+            <div class="coluna-direita">
+                <h3>Close</h3>
+                <p>Sinopse:</p>
+                <p>Leo e Remi são dois garotos na casa dos 13 anos de idade que têm a sua amizade repentinamente interrompida. Para compreender o que aconteceu, Leo se aproxima da mãe de Remi. </p>
+            </div>
+       </div>
+
+        <!--  -->
+        <div class="filmeassistido">
+            <!-- lado esquerdo; imagem e avaliação -->
+            <div class="coluna-esquerda">
+                <img src="img/silenciodosinocentes.webp" alt="Poster Silêncio dos Inocentes">
+                 <div class="estrelas">
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                </div>
+                <button class="enviar">Enviar avaliação</button>
+                <p class="resultado"></p>
+            </div>
+            <!--lado direito; título, sinopse e botão -->
+            <div class="coluna-direita">
+                <h3>O Silêncio dos Inocentes</h3>
+                <p> Sinopse: </p>
+                <p>Clarice Starling (Jodie Foster), agente novata do FBI, procura por um assassino que ataca mulheres jovens e depois retira suas peles. Para construir o perfil psicológico deste psicopata, recorre à ajuda de um assassino preso que agia de forma semelhante.</p>
+                <button type="button" class="btn-ler-mais" onclick="toggleSinopse(this)">Ler mais</button>
+                <span class="texto-escondido">
+                  <p> É o dr. Hannibal Lecter (Anthony Hopkins), um psiquiatra canibal. Lecter, de fato, pode ajudar na investigação, mas quer em troca um local mais confortável para ficar preso. E quer também se aproximar da durona Clarice, para que ela fale de seus traumas e revele seu lado vulnerável. A história mescla o horror dos crimes bárbaros com o  horror psicológico que Lecter faz emergir.</p>
+                </span>
+             </div>
+        </div>
+  
+
+       <!-- Viva -->
+        <div class="filmeassistido">
+            <!-- lado esquerdo; imagem e avaliação -->
+            <div class="coluna-esquerda">
+                <img src="img/viva.jpg" alt="Poster Viva">
+                <div class="estrelas">
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                 <span class="estrela">★</span>
+                </div>
+                <button class="enviar">Enviar avaliação</button>
+                <p class="resultado"></p>
+            </div>
+            <!--lado direito; título, sinopse e botão -->
+            <div class="coluna-direita">
+                <h3>Viva - A Vida é uma Festa</h3>
+                <p>Sinopse: </p>
+                <p> Viva - A Vida é uma Festa, Miguel é um menino de 12 anos que quer muito ser um músico famoso, mas ele precisa lidar com sua família que desaprova seu sonho.</p>
+                 <button type="button" class="btn-ler-mais" onclick="toggleSinopse(this)">Ler mais</button>
+                <span class="texto-escondido">
+                   <p> Determinado a virar o jogo, ele acaba desencadeando uma série de eventos ligados a um mistério de 100 anos. A aventura, com inspiração no feriado mexicano do Dia dos Mortos, acaba gerando uma extraordinária reunião familiar. </p>
+                </span>
+            </div>
+       </div>
+        
+       
+    
+
+    <script src="script.js"></script>
+    </body>
+</html> 

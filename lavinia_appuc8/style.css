@@ -1,0 +1,117 @@
+body{
+    background-color: #5a352a;
+}
+header h1{
+    color: #f6efee;
+    font-size: 35px;
+    max-width: 0 auto;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    text-align: center;
+    background-color: #a6a57a;
+    border-radius: 20px;
+}
+
+.grid{
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+/* O Card Verde Principal */
+.filmeassistido {
+  background-color: #a6a57a;
+  border-radius: 20px;
+  padding: 16px;
+  margin: 15px;
+  display: flex;        
+  flex-direction: row;   
+  gap: 16px;            
+  align-items: flex-start;
+}
+
+/* Coluna da Esquerda (Foto + Estrelas) */
+.coluna-esquerda {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  width: 110px;     
+  flex-shrink: 0;   /* impede que o texto esmague a coluna da foto */
+}
+
+.coluna-esquerda img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.avaliacao {
+  font-size: 12px; 
+  white-space: nowrap;   /* Impede as estrelas de quebrarem de linha */
+}
+
+/* Coluna da Direita (Textos + Botão) */
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;           /* Faz o texto preencher todo o resto do card */
+}
+
+.coluna-direita h3 {
+  margin: 0 0 8px 0;
+  color: #54382b;
+  font-size: 25px;
+}
+
+.coluna-direita p {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #f6efee;
+  text-align: left;       /* texto alinhado à esquerda na coluna */
+}
+
+/* Esconde a segunda parte da sinopse no início */
+.texto-escondido {
+  display: none;
+}
+
+.btn-ler-mais {
+  background-color: #54382b;
+  border-radius: 30px;
+  color: #f6efee;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+  font-size: 13px;
+  width: 90px;
+  align-self: center;
+}
+
+.estrelas {
+    display: flex;
+    gap: 1px;
+    margin-bottom: 10px;
+}
+
+.estrela {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.estrela.ativa {
+    color: gold;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #5a352a;
+    color: #f6efee;
+    height: 49px;
+}
+
