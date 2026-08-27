@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	       <meta charset="UTF-8">
+	       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	       <title>Produtos Labiais</title>
+	      <link rel="banner" type="png" href="../makeb.webp">
+	       <link rel="stylesheet" href="style.css/style.css">
+	</head>
+
+  <body pagamento>
+
+    <header class="cabecalho-labios">
+        <img class="logolabios" src="img/img/mb.png" alt="Logo Make Beauty">
+        <h1>Produtos Labiais</h1>
+    </header>
+
+
+    <div class="grid-labios">
+
+      <div class="produtoslabiais">
+       <img src="img/img/diorgloss.webp">
+       <h3>Gloss Dior</h3>
+        <p>R$ 289,00</p>
+        <button class="btn-comprar"
+          data-produto="Gloss DIOR"
+          data-descricao="Gloss Hidratante DIOR"
+          data-preco="289.00">
+          Comprar
+        </button>
+      </div>
+
+
+      <div class="produtoslabiais">
+      <img src="img/img/kindgloss.jpg">
+       <h3>Gloss Kind</h3>
+        <p>R$ 44,96</p>
+        <button class="btn-comprar"
+          data-produto="Gloss Kind"
+          data-descricao="Gloss KIND alta duração"
+          data-preco="44.96">
+          Comprar
+        </button>
+      </div>
+
+      <div class="produtoslabiais">
+        <img src="img/img/labotratgloss.webp">
+         <h3>Gloss Labotrat</h3>
+        <p>R$ 26,82</p>
+        <button class="btn-comprar"
+          data-produto="Gloss Labotrat"
+          data-descricao="Gloss Hidratante da LABOTRAT"
+          data-preco="26.82">
+          Comprar
+        </button>
+      </div>
+
+      <div class="produtoslabiais">
+        <img src="img/img/franboesagloss.webp">
+        <h3>Gloss Franboesa by FRAN</h3>
+        <p>R$ 109,99</p>
+        <button class="btn-comprar"
+          data-produto="Gloss FRANBOESA by FRAN"
+          data-descricao="Gloss sabor framboesa de Franciny Ehlke"
+          data-preco="109.99">
+          Comprar
+        </button>
+      </div>
+
+      <div class="produtoslabiais">
+        <img src="img/img/melugloss.webp">
+        <h3>Gloss Melu</h3>
+        <p>R$ 25,89</p>
+        <button class="btn-comprar"
+          data-produto="Gloss MELU"
+          data-descricao="Gloss da MELU de alta duração"
+          data-preco="25.89">
+          Comprar
+        </button>
+      </div>
+
+      <div class="produtoslabiais">
+        <img src="img/img/glossed.avif">
+        <h3>Gloss Glossed by SEPHORA </h3>
+        <p>R$ 85,73</p>
+        <button class="btn-comprar"
+          data-produto="Glossed by SEPHORA"
+          data-descricao="Gloss da SEPHORA de alta duração"
+          data-preco="85.73">
+          Comprar
+        </button>
+      </div>
+          
+      
+    </div>
+
+        
+
+ 
+
+    <script src="js/produtos.js"></script>
+  </body>
+
+
+  <script>
+
+  if ('serviceWorker' in navigator) {
+
+    window.addEventListener('load', () => {
+
+      navigator.serviceWorker.register('/sw.js')
+
+        .then(reg => console.log('Service Worker registrado com sucesso!', reg))
+
+        .catch(err => console.log('Falha ao registrar o Service Worker:', err));
+
+    });
+
+  }
+
+</script>
+</html>

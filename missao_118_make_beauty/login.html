@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	       <meta charset="UTF-8">
+	       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	       <title>Página de Login</title>
+	      <link rel="banner" type="png" href="../makeb.webp">
+	       <link rel="stylesheet" href="style.css/style.css">
+	</head>
+
+    <body>
+
+		
+		<div class="logomarca">
+            <img class="logomakebeauty" src="img/img/mb.png" alt="Logo da Make Beauty">
+      </div>
+
+
+        <div class="tela-login">
+			<div class="mensagem-login">
+               <h1>Bem-vindo de volta!</h1>
+                <p>Insira seu e-mail e a senha criada.</p>
+            </div>
+
+			<form action="telainicial.html" method="post">
+
+				<div class="campo-login">
+				 <input type="email" placeholder="Gmail" required>
+				</div>
+
+				<div class="campo-login">
+				 <input type="password" placeholder="Senha" required>
+				</div>
+               
+				 <button type="submit" class="btn-cadastrar">Login</button>
+
+			</form>
+       </div>
+
+
+
+
+
+
+    </body>
+	<script>
+
+  if ('serviceWorker' in navigator) {
+
+    window.addEventListener('load', () => {
+
+      navigator.serviceWorker.register('/sw.js')
+
+        .then(reg => console.log('Service Worker registrado com sucesso!', reg))
+
+        .catch(err => console.log('Falha ao registrar o Service Worker:', err));
+
+    });
+
+  }
+
+</script>
+</html>

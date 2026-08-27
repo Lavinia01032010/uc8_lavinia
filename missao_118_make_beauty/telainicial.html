@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	     <title>Página Inicial</title>
+	    <link rel="stylesheet" href="style.css/style.css">
+		  
+	</head>
+
+    <header class="tela-logo">
+
+		<div class="pesquisa-container">
+			<input type="text" placeholder="Procurando algo específico? Pesquise aqui!">
+		</div>
+
+    </header>
+    <body>
+		<main class="conteudo">
+
+			<aside class="menu-categorias">
+				<a href="labios.html"> Produtos Labiais</a>
+				<a href="olhos.html"> Produtos para Olhos</a>
+			</aside>
+
+			<section class="promocoes">
+
+				<h1>Promoções Especiais</h1>
+
+				<div class="grid-labios">
+
+					<div class="produtos-promo">
+						<img src="img/img/bl.jpg" alt="Base Líquida">
+						<h3> Base Líquida by BRUNA TAVARES</h3>
+						<h4> Cor promocional - F10!</h4>
+						<p class="preco-antigo">R$ 119,99</p>
+                        <p class="preco-novo">R$ 89,90</p>
+						<button class="btn-comprar"
+						data-produto="Base Líquida by BRUNA TAVARES"
+						data-descricao="Base Líquida na cor F10 by BRUNA TAVARES"
+						data-preco="89.90">
+						Comprar
+						</button>
+					</div>
+
+					<div class="produtos-promo">
+						<img src="img/img/iceg.webp" alt="Ice Gloss">
+						<h3> Gloss ICE GLOSS by BRUNA TAVARES</h3>
+						<h4> PRODUTO COM MELHOR DESCONTO!</h4>
+						<p class="preco-antigo">R$ 120,50</p>
+                        <p class="preco-novo">R$ 75,99</p>
+						<button class="btn-comprar"
+						data-produto="Gloss ICE GLOSS by BRUNA TAVARES"
+						data-descricao="Gloss ICE by BRUNA TAVARES"
+						data-preco="75.99">
+						Comprar
+						</button>
+					</div>
+
+					<div class="produtos-promo">
+						<img src="img/img/biglash.webp" alt="Big Lash">
+						<h3> Rímel BIGLASH by BRUNA TAVARES</h3>
+						<p class="preco-antigo">R$ 86,90</p>
+                        <p class="preco-novo">R$ 72,68</p>
+						<button class="btn-comprar"
+						data-produto="Rímel BIGLASH by BRUNA TAVARES"
+						data-descricao="Rímel BIGLASH by BRUNA TAVARES a prova d'água"
+						data-preco="72.68">
+						Comprar
+						</button>
+					</div>
+
+					<div class="produtos-promo">
+						<img src="img/img/glosslicious.webp" alt="Gloss">
+						<h3> Gloss Glosslicious by FRAN</h3>
+						<p class="preco-antigo">R$ 125,70</p>
+                        <p class="preco-novo">R$ 117,80</p>
+						<button class="btn-comprar"
+						data-produto="Glosslicious by FRAN"
+						data-descricao="Gloss GLOSSLICIOUS by FRAN edição limitada"
+						data-preco="117.80">
+						Comprar
+						</button>
+					</div>
+
+					<div class="produtos-promo">
+						<img src="img/img/bestskineversephora.avif" alt="Best Skin">
+						<h3> Base BEST SKIN EVER by SEPHORA</h3>
+						<p class="preco-antigo">R$ 147,67</p>
+                        <p class="preco-novo">R$ 128,98</p>
+						<button class="btn-comprar"
+						data-produto="Base BEST SKIN EVER by SEPHORA"
+						data-descricao="Base longa duração by SEPHORA"
+						data-preco="128.98">
+						Comprar
+						</button>
+					</div>
+
+					<div class="produtos-promo">
+						<img src="img/img/lapislabialluisance.jpg" alt="Lápis">
+						<h3> Lápis Labial Duplo by LUISANCE</h3>
+						<p class="preco-antigo">R$ 120,50</p>
+                        <p class="preco-novo">R$ 75,99</p>
+						<button class="btn-comprar"
+						data-produto="Lápis Labial DUPLO by LUISANCE"
+						data-descricao="Lápis Labial duplo by LUISANCE de longa duração"
+						data-preco="75.99">
+						Comprar
+						</button>
+					</div>
+
+				</div>
+
+			</section>
+
+		</main>
+	  <script src="js/produtos.js"></script>
+    </body>
+	<script>
+
+  if ('serviceWorker' in navigator) {
+
+    window.addEventListener('load', () => {
+
+      navigator.serviceWorker.register('/sw.js')
+
+        .then(reg => console.log('Service Worker registrado com sucesso!', reg))
+
+        .catch(err => console.log('Falha ao registrar o Service Worker:', err));
+
+    });
+
+  }
+
+</script>
+</html>	                

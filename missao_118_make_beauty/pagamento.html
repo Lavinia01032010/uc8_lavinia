@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	       <meta charset="UTF-8">
+	       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	       <title>Página de Pagamento</title>
+	      <link rel="banner" type="png" href="../makeb.webp">
+	       <link rel="stylesheet" href="style.css/style.css">
+	</head>
+
+	<body>
+		<div class="container-pagamento">
+			<h2>Pagamento</h2>
+			<div class="produto">
+				<h3>Resumo do Pedido</h3>
+				<img id="imagemProduto" alt="Produto">
+				<p><strong>Produto:</strong> <span id="produto"></span></p>
+				<p><strong>Descrição:</strong> <span id="descricao"></span></p>
+				 <h1 class="preco">
+                   R$ <span id="preco"></span>
+                </h1>
+			</div>
+			<div class="pagamento">
+				<h3>Método de Pagamento</h3>
+				<select id="metodo">
+					<option>PIX</option>
+					<option>Cartão de Crédito</option>
+					<option>Cartão de Débito</option>
+					<option>Boleto Bancário</option>
+				</select>
+			</div>
+            
+			<h3>Endereço de Entrega</h3>
+			<input
+				type="text"
+				id="cep"
+				placeholder="Digite seu CEP"
+				maxlength="9"
+			required>
+
+			<button id="comprar">
+				Finalizar Compra
+			</button>
+			<div id="mensagem"></div>
+		</div>
+
+		
+		<script src="js/pagamento.js"></script>
+
+		
+		
+    </body>
+	<script>
+
+  if ('serviceWorker' in navigator) {
+
+    window.addEventListener('load', () => {
+
+      navigator.serviceWorker.register('/sw.js')
+
+        .then(reg => console.log('Service Worker registrado com sucesso!', reg))
+
+        .catch(err => console.log('Falha ao registrar o Service Worker:', err));
+
+    });
+
+  }
+
+</script>
+</html>

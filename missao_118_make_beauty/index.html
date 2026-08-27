@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	       <meta charset="UTF-8">
+	       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	       <title>Página de Cadastro</title>
+	      <link rel="banner" type="png" href="../makeb.webp">
+	       <link rel="stylesheet" href="style.css/style.css">
+	</head>
+	<body>
+
+      <div class="logomarca">
+            <img class="logomakebeauty" src="img/img/mb.png" alt="Logo da Make Beauty">
+      </div>
+
+		<div class="tela-cadastro">
+
+            <h2 class="titulo-cadastro">
+              Nova por aqui? Faça seu cadastro!
+            </h2>
+
+            <form action="telainicial.html" method="POST">
+
+                <div class="campo">
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="campo">
+                    <input type="password" id="senha" name="senha" maxlength="8" minlength="8" placeholder="Crie uma senha de 8 caracteres" required>
+                </div>
+
+                <div class="campo">
+                    <input type="tel" id="tel" name="tel" placeholder="Digite seu telefone de contato" required>
+                </div>
+
+            
+                <button type="submit" class="btn-cadastrar">Cadastrar</button>
+                
+                <p class="link-login-container">
+                <a href="login.html">Já possuo cadastro</a>
+                </p>
+            </form>
+		</div>
+
+        
+	</body>
+
+
+    <script>
+
+  if ('serviceWorker' in navigator) {
+
+    window.addEventListener('load', () => {
+
+      navigator.serviceWorker.register('/sw.js')
+
+        .then(reg => console.log('Service Worker registrado com sucesso!', reg))
+
+        .catch(err => console.log('Falha ao registrar o Service Worker:', err));
+
+    });
+
+  }
+
+</script>
+</html>

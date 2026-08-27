@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	       <meta charset="UTF-8">
+	       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	       <title>Produtos para Olhos</title>
+	      <link rel="banner" type="png" href="../makeb.webp">
+	       <link rel="stylesheet" href="style.css/style.css">
+	</head>
+
+  <body>
+        <header class="cabecalho-olhos">
+            <h1>Produtos para Olhos</h1>
+        </header>
+
+        <div class="grid-olhos">
+
+            <div class="produtosolhos">
+            <img src="img/img/mascaradeciliosmarrom.jpg" alt="Máscara de Cílios Marrom">
+            <h3>Máscara de Cílios Marrom</h3>
+            <p>R$43,68 </p>
+            <button class="btn-comprar"
+            data-produto="Máscara de Cílios Marrom"
+            data-descricao="Máscara de Cílios marrom a prova d'água"
+            data-preco="43.68">
+            Comprar
+            </button>
+            </div>
+
+            <div class="produtosolhos">
+            <img src="img/img/paletadisneybrunatavares.jpg" alt="Paleta de Sombras DISNEY">
+            <h3>Paleta de Sombras DISNEY</h3>
+            <p>R$103,57 </p>
+            <button class="btn-comprar"
+            data-produto="Paleta de Sombras DISNEY"
+            data-descricao="Sombra DISNEY edição limitada"
+            data-preco="103.57">
+            Comprar
+            </button>
+            </div>
+
+            <div class="produtosolhos">
+            <img src="img/img/rimelduplo.jpg" alt="Rímel Duplo">
+            <h3>Rímel Duplo</h3>
+            <p>R$10,99 </p>
+            <button class="btn-comprar"
+            data-produto="Rímel Duplo"
+            data-descricao="Máscara de Cílios alta duração"
+            data-preco="10.99">
+            Comprar
+            </button>
+            </div>
+
+            <div class="produtosolhos">
+            <img src="img/img/sombraoceane.jpg">
+            <h3>Sombra OCE'ANE</h3>
+            <p>R$87,39 </p>
+            <button class="btn-comprar"
+            data-produto="Sombra OCE'ANE"
+            data-descricao="Paleta de Sombras OCE'ANE alta duração"
+            data-preco="87.39">
+            Comprar
+            </button>
+            </div>
+
+            <div class="produtosolhos">
+            <img src="img/img/mascaradeciliosmaybelline.jpg" alt="Máscara de Cílios MAYBELLINE">
+            <h3>Máscara de Cílios MAYBELLINE</h3>
+            <p>R$19,99 </p>
+            <button class="btn-comprar"
+            data-produto="Rímel MAYBELLINE"
+            data-descricao="Máscara de Cílios a prova d'água"
+            data-preco="19.99">
+            Comprar
+            </button>
+            </div>
+
+            <div class="produtosolhos">
+            <img src="img/img/kitmascaratropico.jpg">
+            <h3>KIT 12 UNIDADES Máscara de Cílios TROPICAL by RUBY ROSE</h3>
+            <p>R$199,99 </p>
+            <button class="btn-comprar"
+            data-produto="KIT 12 UNIDADES Rímel TROPICAL by RUBY ROSE"
+            data-descricao="Kit 12 máscaras de cílios TROPICAL edição limitada"
+            data-preco="199.99">
+            Comprar
+            </button>
+            </div>
+
+        
+
+        
+        </div>
+
+
+   
+
+        <script src="js/produtos.js"></script>
+    </body>
+    <script>
+
+  if ('serviceWorker' in navigator) {
+
+    window.addEventListener('load', () => {
+
+      navigator.serviceWorker.register('/sw.js')
+
+        .then(reg => console.log('Service Worker registrado com sucesso!', reg))
+
+        .catch(err => console.log('Falha ao registrar o Service Worker:', err));
+
+    });
+
+  }
+
+</script>
+</html>
