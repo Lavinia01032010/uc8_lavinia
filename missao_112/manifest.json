@@ -1,0 +1,13 @@
+{
+  "background_color": "#e3f9ff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Gravador de áudios",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "Gravador de áudios",
+  "start_url": "https://lavinia01032010.github.io/gravador_de_audio/",
+  "theme_color": "#77bbd0",
+  "description": "Grave áudios",
+  "lang": "pt"
+}
